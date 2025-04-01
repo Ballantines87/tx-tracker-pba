@@ -1,11 +1,11 @@
 export type Settled = {
   blockHash: string
 } & (
-  | {
+    | {
       type: "invalid"
     }
-  | { type: "valid"; successful: boolean }
-)
+    | { type: "valid"; successful: boolean }
+  )
 
 export type NewTransactionEvent = {
   type: "newTransaction"
